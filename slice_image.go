@@ -52,7 +52,7 @@ func (receiver Slice) At(x, y int) color.Color {
 
 // Bounds returns the rectangular area for which there may be non-zero colors.
 //
-// BOunds helps text32x36.Slice fit the Go built-in image.Image interface.
+// Bounds helps text32x36.Slice fit the Go built-in image.Image interface.
 func (receiver Slice) Bounds() image.Rectangle {
 	const x = 0
 	const y = 0
