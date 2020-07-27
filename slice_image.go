@@ -12,6 +12,9 @@ const (
 	imageHeight =  36*8
 )
 
+// At returns the color of the pixel at (x,y).
+//
+// At helps text32x36.Slice fit the Go built-in image.Image interface.
 func (receiver Slice) At(x, y int) color.Color {
 	if nil == receiver {
 		return nil
@@ -47,6 +50,9 @@ func (receiver Slice) At(x, y int) color.Color {
 	return c
 }
 
+// Bounds returns the rectangular area for which there may be non-zero colors.
+//
+// BOunds helps text32x36.Slice fit the Go built-in image.Image interface.
 func (receiver Slice) Bounds() image.Rectangle {
 	const x = 0
 	const y = 0
@@ -63,6 +69,9 @@ func (receiver Slice) Bounds() image.Rectangle {
 	}
 }
 
+// ColorModel returns the color model.
+//
+// BOunds helps text32x36.Slice fit the Go built-in image.Image interface.
 func (receiver Slice) ColorModel() color.Model {
 	const anyRune rune = 'A'
 
