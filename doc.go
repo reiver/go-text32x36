@@ -7,6 +7,9 @@ A text matrix is a 2-dimensional matrix of UNICODE characters.
 This can be used to create the output end of command-line interface (CLI).
 Other labels some might associate with this are: terminal, console, and even shell.
 
+The image.Image that this represents has 8x8 pixel characers.
+Which means the image.Image has a width×height of 256×288.
+
 Example
 
 Here is an example:
